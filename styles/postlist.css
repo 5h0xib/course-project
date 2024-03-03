@@ -1,0 +1,578 @@
+*{
+    font-family: "Fredoka", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #ffeedd;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* NAV BAR or HEADER */
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: blue;
+    font-size: 2.1rem;
+    font-weight: 800;
+    font-family: 'Montez', cursive;
+}
+
+.navbar .menu-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding-right: 50px;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar li {
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: rgba(0, 38, 255, 0.493);
+    backdrop-filter: blur(10px);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+
+.navbar li:hover{
+    border-style: dotted;
+    background-color: rgb(185, 140, 89);
+    display: border;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 0px 4px 8px rgb(0, 23, 156);
+}
+
+/* LOGIN-POP */
+
+.login-pop{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 1px 1px 1px 1000px #0000006c;
+    border-radius: 10px;
+}
+
+.login-pop .close-btn{
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+.login-pop .login-form h2{
+    font-weight: 400;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+    color: #444444;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #44444470;
+}
+
+.login-pop .login-form .login-form-element {
+    margin: 15px 0px;
+}
+
+.login-pop .login-form .login-form-element label{
+    font-size: 14px;
+    color: #222;
+}
+
+.login-pop .login-form .login-form-element input[type="text"]{
+    margin-top: 5px;
+    display: block;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.login-pop .login-form .login-form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.login-pop .login-form .login-form-element button{
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgb(0, 146, 7);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.login-pop .login-form .login-form-element p{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.login-pop .login-form .login-form-element a{
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;    
+}
+
+
+/* SIGN-POP */
+
+.signin-pop{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 1px 1px 1px 1000px #0000006c;
+    border-radius: 10px;
+}
+
+.signin-pop .Sclose-btn{   /* X */
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+.signin-pop .signin-form h2{
+    font-weight: 400;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+    color: #444444;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #44444470;
+}
+
+.signin-pop .signin-form .signin-form-element {
+    margin: 15px 0px;
+}
+
+.signin-pop .signin-form .signin-form-element label{
+    font-size: 14px;
+    color: #222;
+}
+
+.signin-pop .signin-form .signin-form-element input[type="text"]{
+    margin-top: 5px;
+    display: block;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.signin-pop .signin-form .signin-form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.signin-pop .signin-form .signin-form-element button{
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgb(0, 146, 7);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.signin-pop .signin-form .signin-form-element p{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.signin-pop .signin-form .signin-form-element a{
+    color: blue;
+    text-decoration: none;
+}
+
+/* ALL-POSTS */
+
+.post-list {
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 50;
+    left: 50;
+}
+
+.post-list .post {
+    display: flex;
+    background-color: white;
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.74);
+    transition: 0.6s;
+    max-width: 700px;
+}
+
+.post-list .post:hover {
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.664);
+}
+
+.post-list .post .post-name{
+    color: gray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+.post-list .post .post-content{
+    background-color: #e8e8e8;
+    padding-left: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.post-list .post .post-content .post-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    color: gray;
+}
+
+.post-list .post .post-content .post-title span{  /* dust bin icon */
+    cursor: pointer;
+}
+
+.post-list .post .post-content #ellipsis a{
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    justify-content: end;
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+/* DELETE-MODAL */
+
+.DELETE-MODAL {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.DELETE-MODAL .delete-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 1px 1px 1px 2000px #000000a2;
+
+}
+
+
+.DELETE-MODAL .delete-card h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 0%;
+}
+
+
+.DELETE-MODAL .delete-card .Y-N-BUTTONS {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DELETE-MODAL .delete-card .Y-N-BUTTONS .yes{
+    color: white;
+    padding: 8px 20px;
+    background-color: #5eb762;
+    border: none;
+    cursor: pointer;
+}
+
+.DELETE-MODAL .delete-card .Y-N-BUTTONS .no {
+    color: white;
+    padding: 8px 20px;
+    background-color: #d13939;
+    border: none;
+    cursor: pointer;
+}
+
+/* DELETE-MODAL 2 */
+
+.DELETE-MODAL2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.DELETE-MODAL2 .delete-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 1px 1px 1px 2000px #000000a2;
+
+}
+
+
+.DELETE-MODAL2 .delete-card h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 0%;
+}
+
+
+.DELETE-MODAL2 .delete-card .Y-N-BUTTONS {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DELETE-MODAL2 .delete-card .Y-N-BUTTONS .yes{
+    color: white;
+    padding: 8px 20px;
+    background-color: #5eb762;
+    border: none;
+    cursor: pointer;
+}
+
+.DELETE-MODAL2 .delete-card .Y-N-BUTTONS .no {
+    color: white;
+    padding: 8px 20px;
+    background-color: #d13939;
+    border: none;
+    cursor: pointer;
+}
+
+/* DELETE-MODAL 3 */
+
+.DELETE-MODAL3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.DELETE-MODAL3 .delete-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 1px 1px 1px 2000px #000000a2;
+
+}
+
+
+.DELETE-MODAL3 .delete-card h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 0%;
+}
+
+
+.DELETE-MODAL3 .delete-card .Y-N-BUTTONS {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DELETE-MODAL3 .delete-card .Y-N-BUTTONS .yes{
+    color: white;
+    padding: 8px 20px;
+    background-color: #5eb762;
+    border: none;
+    cursor: pointer;
+}
+
+.DELETE-MODAL3 .delete-card .Y-N-BUTTONS .no {
+    color: white;
+    padding: 8px 20px;
+    background-color: #d13939;
+    border: none;
+    cursor: pointer;
+}
+
+/* DELETE-MODAL 4 */
+
+.DELETE-MODAL4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.DELETE-MODAL4 .delete-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 1px 1px 1px 2000px #000000a2;
+
+}
+
+
+.DELETE-MODAL4 .delete-card h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 0%;
+}
+
+
+.DELETE-MODAL4 .delete-card .Y-N-BUTTONS {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DELETE-MODAL4 .delete-card .Y-N-BUTTONS .yes{
+    color: white;
+    padding: 8px 20px;
+    background-color: #5eb762;
+    border: none;
+    cursor: pointer;
+}
+
+.DELETE-MODAL4 .delete-card .Y-N-BUTTONS .no {
+    color: white;
+    padding: 8px 20px;
+    background-color: #d13939;
+    border: none;
+    cursor: pointer;
+}
+
+/* DELETE-MODAL 5*/
+
+.DELETE-MODAL5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.DELETE-MODAL5 .delete-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 1px 1px 1px 2000px #000000a2;
+
+}
+
+
+.DELETE-MODAL5 .delete-card h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 0%;
+}
+
+
+.DELETE-MODAL5 .delete-card .Y-N-BUTTONS {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DELETE-MODAL5 .delete-card .Y-N-BUTTONS .yes{
+    color: white;
+    padding: 8px 20px;
+    background-color: #5eb762;
+    border: none;
+    cursor: pointer;
+}
+
+.DELETE-MODAL5 .delete-card .Y-N-BUTTONS .no {
+    color: white;
+    padding: 8px 20px;
+    background-color: #d13939;
+    border: none;
+    cursor: pointer;
+}

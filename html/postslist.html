@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <script src="https://kit.fontawesome.com/309223e57d.js" crossorigin="anonymous"></script>
+
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&family=Poppins:wght@200;400;500;800&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="/course-project/styles/postlist.css">
+
+</head>
+
+<body>
+    <!-- TODO: Include code for header here -->
+    <header>
+        <nav class="navbar">
+            <a href="/course-project/index.html" class="logo">ScriBBler</a>
+    
+            <ul class="menu-links">
+                <li><a onclick="document.querySelector('.login-pop').style.display = 'block'">SIGN IN</a></li>
+                <li><a onclick="document.querySelector('.signin-pop').style.display = 'block'">SIGN UP</a></li>
+            </ul>
+        </nav>
+        <a>Explore,Imagine,Create</a>
+    </header>
+    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+
+
+    <!-- DELETE post1-->
+    <div id="DELETE-MODAL" class="DELETE-MODAL">
+        <div class="delete-card">
+            <h1>Are you sure you want to delete this post?</h1>
+            
+            <div class="Y-N-BUTTONS">
+                <button onclick="deletePost1()" class="yes">Yes</button>
+                <button onclick="document.querySelector('.DELETE-MODAL').style.display = 'none'" class="no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DELETE post2-->
+    <div id="DELETE-MODAL2" class="DELETE-MODAL2">
+        <div class="delete-card">
+            <h1>Are you sure you want to delete this post?</h1>
+            
+            <div class="Y-N-BUTTONS">
+                <button onclick="deletePost2()" class="yes">Yes</button>
+                <button onclick="document.querySelector('.DELETE-MODAL2').style.display = 'none'" class="no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DELETE post3-->
+    <div id="DELETE-MODAL3" class="DELETE-MODAL3">
+        <div class="delete-card">
+            <h1>Are you sure you want to delete this post?</h1>
+            
+            <div class="Y-N-BUTTONS">
+                <button onclick="deletePost3()" class="yes">Yes</button>
+                <button onclick="document.querySelector('.DELETE-MODAL3').style.display = 'none'" class="no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DELETE post4-->
+    <div id="DELETE-MODAL4" class="DELETE-MODAL4">
+        <div class="delete-card">
+            <h1>Are you sure you want to delete this post?</h1>
+            
+            <div class="Y-N-BUTTONS">
+                <button onclick="deletePost4()" class="yes">Yes</button>
+                <button onclick="document.querySelector('.DELETE-MODAL4').style.display = 'none'" class="no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DELETE post5-->
+    <div id="DELETE-MODAL5" class="DELETE-MODAL5">
+        <div class="delete-card">
+            <h1>Are you sure you want to delete this post?</h1>
+            
+            <div class="Y-N-BUTTONS">
+                <button onclick="deletePost5()" class="yes">Yes</button>
+                <button onclick="document.querySelector('.DELETE-MODAL5').style.display = 'none'" class="no">No</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- list of all posts starts here -->
+    <div class="post-list">
+
+        <!-- post 1 starts here -->
+        <div id="post1" class="post">
+            <div class="post-name">
+                <p>Srishti Gupta</p>
+            </div>
+
+            <div class="post-content">
+                <div class="post-title">
+                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <span id="trash" onclick="document.querySelector('.DELETE-MODAL').style.display = 'block'">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                <span id="ellipsis">
+                    <a href="/course-project/html/post.html" ><i class="fa-solid fa-ellipsis"></i></a>
+                </span>
+            </div>
+        </div>
+        <!-- post 1 ends here -->
+
+        <!-- post 2 starts here -->
+        <div id="post2" class="post">
+            <div class="post-name">
+                <p>Colby Fayock</p>
+            </div>
+
+            <div class="post-content">
+                <div class="post-title">
+                    <p>What is linting and how can it save you time?</p>
+                    <span id="trash" onclick="document.querySelector('.DELETE-MODAL2').style.display = 'block'">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                <span id="ellipsis">
+                    <a href="/course-project/html/post.html" ><i class="fa-solid fa-ellipsis"></i></a>
+                </span>
+            </div>
+        </div>
+        <!-- post 2 ends here -->
+
+        <!-- post 3 starts here -->
+        <div id="post3" class="post">
+            <div class="post-name">
+                <p>Yazeed Bzadough</p>
+            </div>
+
+            <div class="post-content">
+                <div class="post-title">
+                    <p>How to Get More Views on Your Tech Blog</p>
+                    <span id="trash" onclick="document.querySelector('.DELETE-MODAL3').style.display = 'block'">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                <span id="ellipsis">
+                    <a href="/course-project/html/post.html" ><i class="fa-solid fa-ellipsis"></i></a>
+                </span>
+            </div>
+        </div>
+        <!-- post 3 ends here -->
+
+        <!-- post 4 starts here -->
+        <div id="post4" class="post">
+            <div class="post-name">
+                <p>Cedd Burge</p>
+            </div>
+
+            <div class="post-content">
+                <div class="post-title">
+                    <p>How to write easily describable code</p>
+                    <span id="trash" onclick="document.querySelector('.DELETE-MODAL4').style.display = 'block'">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                    leads to confusion when discussing the code.</p>
+                <span id="ellipsis">
+                    <a href="/course-project/html/post.html" ><i class="fa-solid fa-ellipsis"></i></a>
+                </span>
+            </div>
+        </div>
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+        <div id="post5" class="post">
+            <div class="post-name">
+                <p>Srishti Gupta</p>
+            </div>
+
+            <div class="post-content">
+                <div class="post-title">
+                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <span class="trash" onclick="document.querySelector('.DELETE-MODAL5').style.display = 'block'">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                    named xyz.</p>
+                <span id="ellipsis">
+                    <a href="/course-project/html/post.html" ><i class="fa-solid fa-ellipsis"></i></a>
+                </span>
+            </div>
+        </div>
+        <!-- post 5 ends here -->
+
+        <!-- TODO: Write code for delete post modal here -->
+
+    </div>
+    <!-- list of all posts ends here -->
+
+
+
+<!-- LOGIN POP -->
+<form>
+    <div class="login-pop">
+        <div class="close-btn"><a onclick="document.querySelector('.login-pop').style.display = 'none'">x</a></div>
+
+        <div class="login-form">
+            <h2>Welcome Back!</h2>
+            
+            <div class="login-form-element">
+                <label for="Username">Username</label>
+                <input type="text" required id="Username" placeholder="Enter your username" >
+            </div>
+
+            <div class="login-form-element">
+                <label for="Password">Password</label>
+                <input type="password" id="L-password" placeholder="Enter password" required>
+            </div>
+
+            <div class="login-form-element">
+                <button type="submit" class="submit">sign in</button>
+            </div>
+            
+            <div class="login-form-element">
+                <p>not a member? <a onclick="document.querySelector('.signin-pop').style.display = 'block'">sign up</a></p>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+<!-- SIGN-UP--POP -->
+<form>
+<div class="signin-pop">
+    <div class="Sclose-btn"><a onclick="document.querySelector('.signin-pop').style.display = 'none'">x</a></div>
+
+    <div class="signin-form">
+        <h2>Get Started</h2>
+        <div class="signin-form-element">
+            <label for="NAME">Name</label>
+            <input type="text" id="NAME" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="signin-form-element">
+            <label for="USERNAME">Username</label>
+            <input type="text" id="USERNAME" placeholder="Enter your user name" required>
+        </div>
+
+        <div class="signin-form-element">
+            <label for="Password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="signin-form-element">
+            <label for="Password">ConfirmPassword</label>
+            <input type="password" id="password" placeholder="Re-enter your password" required>
+        </div>
+
+        <div class="signin-form-element">
+            <button class="submit" input="submit">Sign up</button>
+        </div>
+    </div>
+</div>
+</form>
+<!-- JS file -->
+    <script src="/course-project/javascript/postlist.js"></script>
+</body>
+
+</html>

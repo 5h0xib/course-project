@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <script src="https://kit.fontawesome.com/309223e57d.js" crossorigin="anonymous"></script>
+
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&family=Poppins:wght@200;400;500;800&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles/index.css">
+
+
+    <script src="/course-project/javascript/index.js"></script>
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <header>
+        <nav class="navbar">
+            <a href="/index.html" class="logo">ScriBBler</a>
+    
+            <ul class="menu-links">
+                <!-- in line java script to display and hide the sign in and sigin up-->
+                <li><a onclick="document.querySelector('.login-pop').style.display = 'block'" >SIGN IN</a></li>
+                <li><a onclick="document.querySelector('.signin-pop').style.display = 'block'" >SIGN UP</a></li>
+            </ul>
+        </nav>
+        <a>Explore,Imagine,Create</a>
+    </header>
+    
+<!-- all posts and create post btn -->
+    <section class="hero-section">
+        <div class="content">
+            <a href="html/postslist.html">ALL POSTS</a>
+            <a href="html/createpost.html">CREATE POST</a>
+        </div>
+    </section>
+
+
+
+
+
+
+<!-- LOGIN POP -->
+    <form>
+        <div class="login-pop">
+            <!-- in line java script to hide the login -->
+            <div class="close-btn"><a onclick="document.querySelector('.login-pop').style.display = 'none'">x</a></div>
+    
+            <div class="login-form">
+                <h2>Welcome Back!</h2>
+                
+                <div class="login-form-element">
+                    <label for="Username">Username</label>
+                    <input type="text" required id="Username" placeholder="Enter your username" >
+                </div>
+    
+                <div class="login-form-element">
+                    <label for="Password">Password</label>
+                    <input type="password" id="L-password" placeholder="Enter password" required>
+                </div>
+    
+                <div class="login-form-element">
+                    <button type="submit" class="submit">sign in</button>
+                </div>
+                
+                <div class="login-form-element">
+                    <p>not a member? <a onclick="document.querySelector('.signin-pop').style.display = 'block'">sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+    <!-- SIGN-UP--POP -->
+<form>
+    <div class="signin-pop">
+        <!-- in line java script to hide the login -->
+        <div class="Sclose-btn"><a onclick="document.querySelector('.signin-pop').style.display = 'none'">x</a></div>
+
+        <div class="signin-form">
+            <h2>Get Started</h2>
+            <div class="signin-form-element">
+                <label for="NAME">Name</label>
+                <input type="text" id="NAME" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="signin-form-element">
+                <label for="USERNAME">Username</label>
+                <input type="text" id="USERNAME" placeholder="Enter your user name" required>
+            </div>
+
+            <div class="signin-form-element">
+                <label for="Password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="signin-form-element">
+                <label for="Password">ConfirmPassword</label>
+                <input type="password" id="password" placeholder="Re-enter your password" required>
+            </div>
+
+            <div class="signin-form-element">
+                <button class="submit" input="submit">Sign up</button>
+            </div>
+            
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
